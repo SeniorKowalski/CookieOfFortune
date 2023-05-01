@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+<form th:method="PATCH" th:action="@{/predictions/{id}(id=${prediction.getId()})}" th:object="${prediction}">
+    <label for="prediction">Enter prediction text:</label>
+    <input type="text" th:field="*{prediction}" id="prediction">
+    <div style="color:red" th:if="${#fields.hasErrors('prediction')}" th:errors="*{prediction}">Prediction error</div>
+    <br/>
+
+    <input type="submit" value="Update!"/>
+</form>
+</body>
+</html>

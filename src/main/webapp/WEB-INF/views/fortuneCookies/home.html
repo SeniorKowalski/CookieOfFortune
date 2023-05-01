@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://thymeleaf.org "><head>
+    <meta charset="UTF-8">
+    <title>Fortune Cookie</title>
+    <script src="/static/js/jquery-3.6.4.js"></script>
+    <script src="/static/js/main.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="text-container">
+    <h1 class="highlight">Нажмите на печеньку, чтобы получить предсказание!</h1>
+</div>
+
+<div class="container">
+    <img src="/static/images/cookie.png" alt="Fortune cookie" class="cookie" id="cookie" />
+    <img src="/static/images/cookie-broken.png" alt="Broken fortune cookie" class="cookie-broken" id="cookie-broken" />
+    <div class="fortune" id="fortune" ></div>
+</div>
+<div class="footer-container">
+    <footer class="footer">
+        <p></p>
+    </footer>
+</div>
+
+</body>
+
+</html>

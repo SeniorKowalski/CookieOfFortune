@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Person</title>
+</head>
+<body>
+<p th:text="${prediction.getId()}">VALUE</p>
+<p th:text="${prediction.getPredictionText()}">VALUE</p>
+
+<a th:href="@{/fortuneCookies/{id}/edit(id=${prediction.getId()})}">Edit</a>
+
+<form th:method="DELETE" th:action="@{/fortuneCookies/{id}(id=${prediction.getId()})}">
+    <input type="submit" value="Delete"/>
+</form>
+</body>
+</html>
